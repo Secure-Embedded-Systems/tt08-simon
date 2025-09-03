@@ -19,22 +19,7 @@ detailed description of the bitserial implementation technique for
 SIMON is available in [SIMON Says, Break the Area Records for
 Symmetric Key Block Ciphers on FPGAs](https://eprint.iacr.org/2014/237) .
 
-| Cell            | Count                           |
-| --------------- | ------------------------------- |
-| flip-flop       | 281                             |
-| mux             | 588                             |
-| other logic     | 199                             |
-| TOTAL           | 1068                            |
-
-
 The design uses a 3-bit input and a 2-bit output, in addition to clock and reset.
-
-| Port            |  Function                       |
-| --------------- | ------------------------------- |
-| ui[0]           | Bitserial Data Input            |
-| ui[7:6]         | Control Word                    |
-| uo[0]           | Bitserial Data Output           |
-| uo[7]           | Data Output Valid               |
 
 The data input is asserted by the control word, and must be valid when
 the control word indicates a plaintext-loading or key-loading
@@ -47,14 +32,6 @@ consecutive clock cycles.
 The 2-bit control word defines the operation of the cipher. The LSB is
 a debug bit study to key-loading process and to verify that the key
 register was correctly loaded.
-
-| Control         | Function                           |
-| --------------- | ---------------------------------- |
-| 00              | Idle                               |
-| 01              | Load 128-bit plaintext             |
-| 10              | Load 128-bit key (see LIMITATIONS) |
-| 11              | Encrypt and return ciphertext      |
-
 
 ## LIMITATIONS
 
