@@ -1,6 +1,6 @@
 # Tiny Tapeout project information
 project:
-  title:        "simon_cipher"      # Project title
+  title:        "simon_cipher"      #  Project title
   author:       "Simon Cipher"      # Your name
   discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
   description:  "Bitserial implementation of Simon-128"      # One line description of what your project does
