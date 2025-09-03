@@ -10,14 +10,14 @@ You can also include images in this folder and reference them in the markdown. E
 ## How it works
 
 This is a bitserial implementation of the SIMON Block Cipher.  SIMON
-is a 128-bit block cipher, see [The SIMON and SPECK families of
-Lightweight Block Ciphers](https://eprint.iacr.org/2013/404). A
+is a 128-bit block cipher, see The SIMON and SPECK families of
+Lightweight Block Ciphers (https://eprint.iacr.org/2013/404). A
 bit-serial implementation exchanges throughput for area, thereby
 creating a compact cipher that is dominated by flip-flops and
 multiplexer cells.  However, the overal design size becomes minimal. A
 detailed description of the bitserial implementation technique for
-SIMON is available in [SIMON Says, Break the Area Records for
-Symmetric Key Block Ciphers on FPGAs](https://eprint.iacr.org/2014/237) .
+SIMON is available in SIMON Says, Break the Area Records for
+Symmetric Key Block Ciphers on FPGAs (https://eprint.iacr.org/2014/237) .
 
 The design uses a 3-bit input and a 2-bit output, in addition to clock and reset.
 
